@@ -1,0 +1,27 @@
+--- 
+title: "研究者の卵に向けたささやかな置き土産"
+author: "tabutan"
+date: "`r Sys.Date()`"
+output: 
+  bookdown::gitbook:
+    split_bib: yes  
+    number_sections: true   
+    toc_depth: 4 
+    css: custom_style.css   
+site: bookdown::bookdown_site  
+output_dir: "docs"  
+documentclass: book  
+header-includes:
+   - \usepackage{amsmath}
+   - \usepackage{nccmath}
+bibliography: reference_studymethod.bib   
+csl: nature.csl
+link-citations: yes
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE,
+                      warning = FALSE, fig.align = "center",
+                      cache = TRUE)
+```
+

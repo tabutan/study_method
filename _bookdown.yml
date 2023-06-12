@@ -1,0 +1,9 @@
+book_filename: "研究者の卵に向けたささやかな置き土産"  
+rmd_files:                    
+  - index.Rmd
+  - method1.Rmd
+output_dir: "docs"  
+language:
+  label:
+    fig: "図"
+    tab: "表"
