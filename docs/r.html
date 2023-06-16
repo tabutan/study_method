@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>研究者の卵に向けたささやかな置き土産</title>
-  <meta name="description" content="研究者の卵に向けたささやかな置き土産" />
+  <title>4 R | 研究者の卵に向けたささやかな置き土産</title>
+  <meta name="description" content="4 R | 研究者の卵に向けたささやかな置き土産" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="研究者の卵に向けたささやかな置き土産" />
+  <meta property="og:title" content="4 R | 研究者の卵に向けたささやかな置き土産" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="研究者の卵に向けたささやかな置き土産" />
+  <meta name="twitter:title" content="4 R | 研究者の卵に向けたささやかな置き土産" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="観察.html"/>
 
-<link rel="next" href="論文.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -172,36 +172,65 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">研究者の卵に向けたささやかな置き土産</h1>
-<p class="author"><em>tabutan</em></p>
-<p class="date"><em>2023-06-16</em></p>
+<div id="r" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> R<a href="r.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="how-to-r" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> how to R<a href="r.html#how-to-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="はじめに" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> はじめに<a href="はじめに.html#はじめに" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>論文との接し方がわからない…<br></p>
-<p>初めて論文を読むときに戸惑う人は多いだろう。<br>
-お堅い、特殊な文章表現、、、<br>
-諸々のことが論文を読むと降ってくる。
-論文を読むとき、独学でおいそれと簡単に理解できる人は少数だろう。<br></p>
-<p>筆者は、論文という生き物の生態がわからず、もがき、苦悩した。<br>
-研究というのがわかってきたのは修士論文を書き終わってから。<br>
-遅きに失したというには遅すぎるくらい論文には苦労した。</p>
-<p><strong>最初は何だって難しい</strong>。<br></p>
-<p>最初の困難を乗り越えるのに多大な労力がいることを覚悟しよう。<br>
-それでも心が折れかけるのは世の常。<br>
-そんな迷える人が1人でもいち早く脱出し、研究の本分である考える時間を少しでも増やすことができるよう、論文をあまり読んだことがないために、論文の探し方、読み方を周りの人がどうしているのか知りたい人を対象にしている。</p>
-<p>どんな高出力のエンジンを積んでいても進む方向がわからなければ、水の泡。<br>
-力の効率：<span class="math inline">\(\cos\theta\)</span><br>
-の<span class="math inline">\(\theta\)</span>が0にできるだけ近づける、研究者の卵にとっての滑走路がこのサイトであれば、さいわいです。</p>
+<div id="rrstudioのインストール" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> R・RStudioのインストール<a href="r.html#rrstudioのインストール" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R本体をインストールし、RStudioもインストールする。以下のリンクからインストールできる。</p>
+<div id="言語設定の確認" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> 言語設定の確認<a href="r.html#言語設定の確認" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>言語設定によっては日本語がバグの原因となり、日本語の部分が後で何を書いたのかわからなくなる。
+必ずUTF-8にすること。</p>
+</div>
+</div>
+<div id="rmarkdownの作成" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Rmarkdownの作成<a href="r.html#rmarkdownの作成" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="文献整理のテンプレート" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> 文献整理のテンプレート<a href="r.html#文献整理のテンプレート" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>テンプレートを作成した。
+以下のリンクからアクセスしてファイルをコピペすれば、RStudioで文献調査の体制は整った。</p>
+<ul>
+<li>Rmdファイル</li>
+<li>bibファイル</li>
+<li>ymlファイル</li>
+</ul>
+</div>
+<div id="github" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> GitHub<a href="r.html#github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>コードの公開などで一般によく使われている。ここにファイルを保存することでバージョン管理を行うことができ、日付が変わるたびにファイルを作る必要がなくなる。</p>
+<div id="アカウントの作成" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> アカウントの作成<a href="r.html#アカウントの作成" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="リポジトリの作成" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> リポジトリ－の作成<a href="r.html#リポジトリの作成" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="commmit-push" class="section level3 hasAnchor" number="4.5.3">
+<h3><span class="header-section-number">4.5.3</span> commmit &amp; push<a href="r.html#commmit-push" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>コメントを付けてコミットし、その後プッシュすることでGitHubに保存される。</p>
+</div>
+<div id="pull" class="section level3 hasAnchor" number="4.5.4">
+<h3><span class="header-section-number">4.5.4</span> pull<a href="r.html#pull" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GitHubに保存したファイルをPCに取り込む。</p>
+
+<div id="refs" class="references csl-bib-body" line-spacing="2">
+<div class="csl-entry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">外山滋比古. <em>思考の整理学</em>. (筑摩書房, 1986).</div>
+</div>
+</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="観察.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="論文.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

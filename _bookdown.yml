@@ -2,8 +2,8 @@ book_filename: "研究者の卵に向けたささやかな置き土産"
 rmd_files:                    
   - index.Rmd
   - article.Rmd
-  # - how-to-r.Rmd
   - observation.Rmd
+  - how-to-r.Rmd
 output_dir: "docs"  
 language:
   label:
