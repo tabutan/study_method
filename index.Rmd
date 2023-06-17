@@ -1,5 +1,5 @@
 --- 
-title: "研究者の卵に向けたささやかな置き土産"
+title: "研究者の卵に向けたささやかな囁き"
 author: "tabutan"
 date: "`r Sys.Date()`"
 output: 
