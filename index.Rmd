@@ -1,5 +1,9 @@
 --- 
+<<<<<<< HEAD
 title: "研究者の卵のいろは"
+=======
+title: "研究者の卵に向けたささやかな囁き"
+>>>>>>> bbb9d23aa562d47e484ebde0f4d67528b04fcc36
 author: "tabutan"
 date: "`r Sys.Date()`"
 output: 
