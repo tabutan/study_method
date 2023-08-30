@@ -8,6 +8,20 @@
 
 Rについて本はNotionの「じんるい読書記録データベース」に紹介されているので、ここでは割愛し、ネットの情報を紹介する。
 
+- [わたしたちのR](https://www.jaysong.net/RBook/)：
+ざっくり勉強するのによさそうなサイト。
+
+Rの本は実は英語で無料公開されていることが多い。非常にありがたい。ネット上のものは常に更新されているため、本と内容が違うことがある。
+
+- [R for data science](https://r4ds.had.co.nz/)：
+邦訳『Rではじめるデータサイエンス』のサイト。
+
+- [R Graphic Cookbook](https://r-graphics.org/)：
+邦訳『Rグラフィックスクックブック』のサイト。
+
+- [R Markdown Cookbook](https://gedevan-aleksizde.github.io/rmarkdown-cookbook/)：
+この本はなんと日本語で読める。
+
 ## R・RStudio・Rtoolsのインストール
 R本体をインストールし、RStudioもインストールする。以下のリンクからインストールできる。
 https://posit.co/download/rstudio-desktop/
