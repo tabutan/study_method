@@ -58,3 +58,4 @@ gitソフトウェアのインストール
 リポジトリの作成
 commmit-push
 pull
+rmarkdownでのlatexの使いかた

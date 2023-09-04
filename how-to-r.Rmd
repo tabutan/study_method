@@ -67,3 +67,6 @@ Tools > Global Options > R Markdown > Basics
 
 ### pull
 GitHubに保存したファイルをPCに取り込む。
+
+## RMarkdownでの$\LaTeX$の使いかた
+$\LaTeX$

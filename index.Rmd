@@ -15,7 +15,7 @@ header-includes:
    - \usepackage{amsmath}
    - \usepackage{nccmath}
 bibliography: reference_studymethod.bib   
-csl: nature.csl
+csl: nature.csl      
 link-citations: yes
 ---
 
