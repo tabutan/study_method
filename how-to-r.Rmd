@@ -2,16 +2,47 @@
 研究者がよく使っている無料分析ソフトの１つ。
 
 ## how to R
-## R・RStudioのインストール
+インストールなどの初期設定は次節以降扱う。<br>
+本節では、前処理や結果の出力の勉強について紹介する。<br>
+とにかく、便利さを実感してRと友達になろう。
+
+Rについて本はNotionの「じんるい読書記録データベース」に紹介されているので、ここでは割愛し、ネットの情報を紹介する。
+
+- [わたしたちのR](https://www.jaysong.net/RBook/)：
+ざっくり勉強するのによさそうなサイト。
+
+Rの本は実は英語で無料公開されていることが多い。非常にありがたい。ネット上のものは常に更新されているため、本と内容が違うことがある。
+
+- [R for data science](https://r4ds.had.co.nz/)：
+邦訳『Rではじめるデータサイエンス』のサイト。
+
+- [R Graphic Cookbook](https://r-graphics.org/)：
+邦訳『Rグラフィックスクックブック』のサイト。
+
+- [R Markdown Cookbook](https://gedevan-aleksizde.github.io/rmarkdown-cookbook/)：
+この本はなんと日本語で読める。
+
+## R・RStudio・Rtoolsのインストール
 R本体をインストールし、RStudioもインストールする。以下のリンクからインストールできる。
 https://posit.co/download/rstudio-desktop/
 
 ### 言語設定の確認
 言語設定によっては日本語がバグの原因となり、日本語の部分が後で何を書いたのかわからなくなる。
-必ずUTF-8にすること。
+必ずUTF-8にすること。UTF-8で指定しないとコードの日本語がすべて文字化けしてしまう(T_T)<br>
+設定方法は、
+
+Tools > Global Options > Code > Saving
+
+と進み、真ん中にあるDefault text encoddingでUTF-8を指定。
 
 ## Rmarkdownの作成
 Rで研究を始めるなら、RファイルではなくRmdファイルにすることを強く勧める。
+初期設定ではSourceペインに結果が表示されてしまう。これが嫌な人は、
+
+Tools > Global Options > R Markdown > Basics
+
+と進み、真ん中あたりの"Show output inline for all RMarkdown documents"のチェックを外すと解決する。
+ 
 
 ## 文献整理のテンプレート
 テンプレートを作成した。
@@ -24,7 +55,9 @@ Rで研究を始めるなら、RファイルではなくRmdファイルにする
 ## GitHub
 コードの公開などで一般によく使われている。ここにファイルを保存することでバージョン管理を行うことができ、内容変更のたびにファイルを作る必要がなくなる。
 
-### アカウントの作成
+### GitHubアカウントの作成
+
+### Gitソフトウェアのインストール
 
 ### リポジトリ－の作成
 
@@ -34,3 +67,9 @@ Rで研究を始めるなら、RファイルではなくRmdファイルにする
 
 ### pull
 GitHubに保存したファイルをPCに取り込む。
+
+## RMarkdownでの$\LaTeX$の使いかた
+$\LaTeX$
+
+
+# 引用文献
