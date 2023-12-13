@@ -4,6 +4,7 @@ rmd_files:
   - article.Rmd
   - research-site.Rmd
   - observation.Rmd
+  - analysis.Rmd
   - how-to-r.Rmd
 output_dir: "docs"  
 language:
