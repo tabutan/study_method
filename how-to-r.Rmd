@@ -6,20 +6,21 @@
 本節では、前処理や結果の出力の勉強について紹介する。<br>
 とにかく、便利さを実感してRと友達になろう。
 
-Rについて本はNotionの「じんるい読書記録データベース」に紹介されているので、ここでは割愛し、ネットの情報を紹介する。
+<!-- Rについて本はNotionの「じんるい読書記録データベース」に紹介されているので、ここでは割愛し、ネットの情報を紹介する。 -->
 
-- [わたしたちのR](https://www.jaysong.net/RBook/)：
+- [わたしたちのR](https://www.jaysong.net/RBook/):
 ざっくり勉強するのによさそうなサイト。
+- [The R Graph Gallery](https://r-graph-gallery.com/index.html): Rで作図するときに重宝するサイト。
 
 Rの本は実は英語で無料公開されていることが多い。非常にありがたい。ネット上のものは常に更新されているため、本と内容が違うことがある。
 
-- [R for data science](https://r4ds.had.co.nz/)：
+- [R for data science](https://r4ds.had.co.nz/):
 邦訳『Rではじめるデータサイエンス』のサイト。
 
-- [R Graphic Cookbook](https://r-graphics.org/)：
+- [R Graphic Cookbook](https://r-graphics.org/):
 邦訳『Rグラフィックスクックブック』のサイト。
 
-- [R Markdown Cookbook](https://gedevan-aleksizde.github.io/rmarkdown-cookbook/)：
+- [R Markdown Cookbook](https://gedevan-aleksizde.github.io/rmarkdown-cookbook/):
 この本はなんと日本語で読める。
 
 ## R・RStudio・Rtoolsのインストール
