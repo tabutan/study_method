@@ -21,6 +21,8 @@ fig:sketch
 論文管理ソフト
 研究ノート
 rmarkdown
+論文投稿先の検討
+ジャーナルの検討
 調査地での安全対策
 山歩き
 疲れない歩き方
@@ -59,10 +61,4 @@ rrstudiortoolsのインストール
 rmarkdownの作成
 文献整理のテンプレート
 github
-githubアカウントの作成
-gitソフトウェアのインストール
-リポジトリの作成
-commmit-push
-pull
-rmarkdownでのlatexの使いかた
 引用文献
