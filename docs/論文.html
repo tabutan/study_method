@@ -23,7 +23,7 @@
 <meta name="author" content="tabutan" />
 
 
-<meta name="date" content="2023-12-13" />
+<meta name="date" content="2023-12-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -117,7 +117,7 @@ div.csl-indent {
 <li class="chapter" data-level="1.2" data-path="論文.html"><a href="論文.html#論文の読み方"><i class="fa fa-check"></i><b>1.2</b> 論文の読み方</a>
 <ul>
 <li class="chapter" data-level="1.2.1" data-path="論文.html"><a href="論文.html#論文の構成から理解する"><i class="fa fa-check"></i><b>1.2.1</b> 論文の構成から理解する</a></li>
-<li class="chapter" data-level="1.2.2" data-path="論文.html"><a href="論文.html#論文読解アシストai"><i class="fa fa-check"></i><b>1.2.2</b> 論文読解アシストAI</a></li>
+<li class="chapter" data-level="1.2.2" data-path="論文.html"><a href="論文.html#論文関連ai"><i class="fa fa-check"></i><b>1.2.2</b> 論文関連AI</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="論文.html"><a href="論文.html#論文の記録方法"><i class="fa fa-check"></i><b>1.3</b> 論文の記録方法</a>
 <ul>
@@ -196,7 +196,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.5.4" data-path="r.html"><a href="r.html#commmit-push"><i class="fa fa-check"></i><b>5.5.4</b> commmit &amp; push</a></li>
 <li class="chapter" data-level="5.5.5" data-path="r.html"><a href="r.html#pull"><i class="fa fa-check"></i><b>5.5.5</b> pull</a></li>
 </ul></li>
-<li class="chapter" data-level="5.6" data-path="r.html"><a href="r.html#rmarkdownでのlatexの使いかた"><i class="fa fa-check"></i><b>5.6</b> RMarkdownでの<span class="math inline">\(\LaTeX\)</span>の使いかた</a></li>
+<li class="chapter" data-level="5.6" data-path="r.html"><a href="r.html#rmarkdownでのlatexの使いかた"><i class="fa fa-check"></i><b>5.6</b> RMarkdownでのLaTeXの使いかた</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="引用文献.html"><a href="引用文献.html"><i class="fa fa-check"></i><b>6</b> 引用文献</a></li>
 </ul>
@@ -237,14 +237,472 @@ div.csl-indent {
 <h2><span class="header-section-number">1.1</span> 論文の探し方<a href="論文.html#論文の探し方" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="論文検索用エンジン" class="section level3 hasAnchor" number="1.1.1">
 <h3><span class="header-section-number">1.1.1</span> 論文検索用エンジン<a href="論文.html#論文検索用エンジン" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>今日主流となっている論文の探し方は、ネット検索。たとえば、以下のものがある（筆者はもっぱらGoogle Scholar）。<br></p>
-<ul>
-<li>Google Scholar</li>
-<li>Web of Science</li>
-<li>PubMed</li>
-<li>CiNii Research</li>
-</ul>
-<p>以下、説明する際はGoogle Scholarであることをご容赦下さい。</p>
+<p>今日主流となっている論文の探し方は、ネット検索。たとえば、以下の表 <a href="論文.html#tab:SearchEngines">1.1</a> がある（筆者はもっぱらGoogle Scholar）。<br></p>
+<div id="vtxvjliwqi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#vtxvjliwqi table {
+  font-family: Lato, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#vtxvjliwqi thead, #vtxvjliwqi tbody, #vtxvjliwqi tfoot, #vtxvjliwqi tr, #vtxvjliwqi td, #vtxvjliwqi th {
+  border-style: none;
+}
+
+#vtxvjliwqi p {
+  margin: 0;
+  padding: 0;
+}
+
+#vtxvjliwqi .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #FFFFFF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#vtxvjliwqi .gt_title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#vtxvjliwqi .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#vtxvjliwqi .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#vtxvjliwqi .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#vtxvjliwqi .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#vtxvjliwqi .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#vtxvjliwqi .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#vtxvjliwqi .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#vtxvjliwqi .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#vtxvjliwqi .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#vtxvjliwqi .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#vtxvjliwqi .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#vtxvjliwqi .gt_row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #F6F7F7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#vtxvjliwqi .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vtxvjliwqi .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#vtxvjliwqi .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#vtxvjliwqi .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#vtxvjliwqi .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vtxvjliwqi .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#vtxvjliwqi .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vtxvjliwqi .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_striped {
+  background-color: #FAFAFA;
+}
+
+#vtxvjliwqi .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vtxvjliwqi .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vtxvjliwqi .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vtxvjliwqi .gt_left {
+  text-align: left;
+}
+
+#vtxvjliwqi .gt_center {
+  text-align: center;
+}
+
+#vtxvjliwqi .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#vtxvjliwqi .gt_font_normal {
+  font-weight: normal;
+}
+
+#vtxvjliwqi .gt_font_bold {
+  font-weight: bold;
+}
+
+#vtxvjliwqi .gt_font_italic {
+  font-style: italic;
+}
+
+#vtxvjliwqi .gt_super {
+  font-size: 65%;
+}
+
+#vtxvjliwqi .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#vtxvjliwqi .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#vtxvjliwqi .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#vtxvjliwqi .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#vtxvjliwqi .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#vtxvjliwqi .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#vtxvjliwqi .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:SearchEngines">表1.1: </span>代表的な検索エンジン</caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="論文検索エンジン">論文検索エンジン</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="ロゴ">ロゴ</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Engine" class="gt_row gt_center">Google Scholar</td>
+<td headers="Logo" class="gt_row gt_center"><img src="https://seeklogo.com/images/G/google-scholar-logo-EEEC8EE46B-seeklogo.com.png" style="height:35px;"></td></tr>
+    <tr><td headers="Engine" class="gt_row gt_center gt_striped">Web of Science</td>
+<td headers="Logo" class="gt_row gt_center gt_striped"><img src="https://libraries.emory.edu/sites/default/files/styles/coh_x_large/public/2022-07/Clarivate_Logo.png?itok=eDkE0toU" style="height:35px;"></td></tr>
+    <tr><td headers="Engine" class="gt_row gt_center">PubMed</td>
+<td headers="Logo" class="gt_row gt_center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/US-NLM-PubMed-Logo.svg/250px-US-NLM-PubMed-Logo.svg.png" style="height:35px;"></td></tr>
+    <tr><td headers="Engine" class="gt_row gt_center gt_striped">CiNii Research</td>
+<td headers="Logo" class="gt_row gt_center gt_striped"><img src="https://cir.nii.ac.jp/static/images/ci-home-research.png" style="height:35px;"></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<p>以下、説明する際はGoogle Scholarであることをご容赦いただきたい。</p>
 </div>
 <div id="検索方法" class="section level3 hasAnchor" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> 検索方法<a href="論文.html#検索方法" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -323,13 +781,489 @@ div.csl-indent {
 50-100本ほど論文を読むと吸収する知識量が少なくなり、漸近線が見えてくるはず。<br>
 論文丸々一本精読する義理は全くないし、読む必要がある論文はごく少数。</p>
 </div>
-<div id="論文読解アシストai" class="section level3 hasAnchor" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> 論文読解アシストAI<a href="論文.html#論文読解アシストai" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>論文初心者にとっての大きな助けとなる。</p>
+<div id="論文関連ai" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> 論文関連AI<a href="論文.html#論文関連ai" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>論文初心者にとっての大きな助けとなるかもしれない（表 <a href="論文.html#tab:paperAI">1.2</a>）。</p>
+<div id="vwgdxszxiq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#vwgdxszxiq table {
+  font-family: Lato, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#vwgdxszxiq thead, #vwgdxszxiq tbody, #vwgdxszxiq tfoot, #vwgdxszxiq tr, #vwgdxszxiq td, #vwgdxszxiq th {
+  border-style: none;
+}
+
+#vwgdxszxiq p {
+  margin: 0;
+  padding: 0;
+}
+
+#vwgdxszxiq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #FFFFFF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#vwgdxszxiq .gt_title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#vwgdxszxiq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#vwgdxszxiq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#vwgdxszxiq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#vwgdxszxiq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#vwgdxszxiq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#vwgdxszxiq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#vwgdxszxiq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#vwgdxszxiq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#vwgdxszxiq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#vwgdxszxiq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#vwgdxszxiq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#vwgdxszxiq .gt_row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #F6F7F7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#vwgdxszxiq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vwgdxszxiq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#vwgdxszxiq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#vwgdxszxiq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#vwgdxszxiq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vwgdxszxiq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#vwgdxszxiq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vwgdxszxiq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_striped {
+  background-color: #FAFAFA;
+}
+
+#vwgdxszxiq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vwgdxszxiq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#vwgdxszxiq .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#vwgdxszxiq .gt_left {
+  text-align: left;
+}
+
+#vwgdxszxiq .gt_center {
+  text-align: center;
+}
+
+#vwgdxszxiq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#vwgdxszxiq .gt_font_normal {
+  font-weight: normal;
+}
+
+#vwgdxszxiq .gt_font_bold {
+  font-weight: bold;
+}
+
+#vwgdxszxiq .gt_font_italic {
+  font-style: italic;
+}
+
+#vwgdxszxiq .gt_super {
+  font-size: 65%;
+}
+
+#vwgdxszxiq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#vwgdxszxiq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#vwgdxszxiq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#vwgdxszxiq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#vwgdxszxiq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#vwgdxszxiq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#vwgdxszxiq .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption><span id="tab:paperAI">表1.2: </span>代表的な論文アシストAI</caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="論文読解AI">論文読解AI</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="ロゴ">ロゴ</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="app" class="gt_row gt_center">Consensus</td>
+<td headers="logo" class="gt_row gt_center"><img src="https://consensus.app/home/wp-content/themes/confluance/images/redesign/home/logo-full.png" style="height:35px;"></td></tr>
+    <tr><td headers="app" class="gt_row gt_center gt_striped">Gamma</td>
+<td headers="logo" class="gt_row gt_center gt_striped"><img src="https://uploads-ssl.webflow.com/62e823626cd4fdd0e5dc1527/62e823626cd4fdc26bdc1576_Gamma.svg" style="height:35px;"></td></tr>
+    <tr><td headers="app" class="gt_row gt_center">SciSpace Copilot</td>
+<td headers="logo" class="gt_row gt_center"><img src="https://www.aitoolsclub.com/content/images/2023/08/Screenshot-2023-08-04-221152.png" style="height:35px;"></td></tr>
+    <tr><td headers="app" class="gt_row gt_center gt_striped">Elicit</td>
+<td headers="logo" class="gt_row gt_center gt_striped"><img src="https://blog.elicit.com/content/images/2023/09/elicit-logo-4.png" style="height:35px;"></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
 <dl>
-<dt><a href="https://typeset.io/">SciSpace</a> <img src="https://scispace.com/static/scispace-logo.svg" style="width:10.0%" /></dt>
+<dt>Consensus</dt>
 <dd>
-論文内容について質問するとチャット形式で返答してくれる。
+リサーチクエスチョンに対して、関連するレビューや引用が多い論文を紹介してくれる。
+</dd>
+<dt>Gamma</dt>
+<dd>
+要望内容に応じてプレゼン資料を作成してくれる。論文のURLやDOIを入力するとその論文に関連する情報を視覚的に提供する。
+</dd>
+<dt>SciSpace</dt>
+<dd>
+論文読解アシストAI。論文内容について質問するとチャット形式で返答してくれる。
+</dd>
+<dt>Elicit</dt>
+<dd>
+リサーチクエスチョンに対して実在する論文を引用して返答してくれる。
 </dd>
 </dl>
 </div>
@@ -371,6 +1305,10 @@ div.csl-indent {
 <p>筆者は、この文章をRmarkdownで作成している。筆者にとってRmarkdownは使い勝手がよく、使っていなかった時と比べて研究遂行スピードが上がったことを実感している。<br>
 Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であり、忘れて思い出せないというストレスから解消され、研究を進められる。<br>
 詳細は、how to Rの章で説明する。</p>
+<!-- ## 論文投稿先の検討 -->
+<!-- ### インパクトファクター（IF） -->
+<!-- #### IFの定義 -->
+<!-- ### ジャーナルの検討 -->
 
 </div>
 </div>

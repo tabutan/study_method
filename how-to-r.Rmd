@@ -46,12 +46,20 @@ Tools > Global Options > R Markdown > Basics
  
 
 ## 文献整理のテンプレート
-テンプレートを作成した。
-以下のリンクからアクセスしてファイルをコピペすれば、RStudioで文献調査の体制は整った。
+テンプレートを公開している（[本稿のファイル](https://github.com/tabutan/study_method)）。
+先のリンクからアクセスしてファイルをコピペすれば、RStudioで文献調査の体制は整った。
 
-- Rmdファイル
-- bibファイル
-- ymlファイル
+Rmdファイル
+: 本文やコードを記述するファイル
+
+bibファイル
+: 引用文献を記述するファイル
+
+ymlファイル
+: bookdown形式にするにあたっての構造を指定するファイル
+
+cssファイル
+: 文章のフォーマットを指定するファイル
 
 ## GitHub
 コードの公開などで一般によく使われている。ここにファイルを保存することでバージョン管理を行うことができ、内容変更のたびにファイルを作る必要がなくなる。
@@ -69,7 +77,7 @@ Tools > Global Options > R Markdown > Basics
 ### pull
 GitHubに保存したファイルをPCに取り込む。
 
-## RMarkdownでの$\LaTeX$の使いかた
+## RMarkdownでのLaTeXの使いかた
 $\LaTeX$
 
 

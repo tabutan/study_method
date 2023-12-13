@@ -1,0 +1,66 @@
+h1 {
+  font-size: 21px;
+  font-family: "noto sans Japanese";
+  margin-bottom: -20px;
+  color: #595857; 
+}
+
+h2 {
+  font-size: 19px;
+  font-family: "noto sans Japanese";
+  margin-bottom: -20px;
+  color: #595857; 
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "noto sans Japanese";
+  margin-top: -10px; 
+  color: #595857; 
+}
+
+h4 {
+  font-size: 18px;
+  font-family: "noto sans Japanese";
+  margin-top: -10px; 
+  color: #595857; 
+}
+
+p {
+  font-family: "noto sans Japanese";
+  font-size: 16.5px;
+}
+
+ul {
+  font-size: 15.5px;
+  font-family: "noto sans Japanese";
+}
+
+ol {
+  font-size: 15.5px;
+  font-family: "noto sans Japanese";
+}
+
+li {
+  font-size: 15.5px;
+  font-family: "noto sans Japanese";
+  margin-bottom: 10px; 
+}
+
+.math {
+  font-size: 17px;
+  line-height: 15.5px;
+  margin-bottom: 20px;
+}
+
+.caption {
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: 13.5px;
+  color: gray;
+  font-weight: bold;
+}
+
+#TOC {
+  margin: -15px;
+}

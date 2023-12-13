@@ -13,12 +13,12 @@
 
 最初の困難を乗り越えるのに多大な労力がいることを覚悟しよう。<br>
 それでも心が折れかけるのは世の常。<br>
-本原稿は、研究のことをあまりわかっていないと感じる悩み多き研究者の卵を対象にしている。
+本稿は、研究のことをあまりわかっていないと感じる悩み多き研究者の卵を対象にしている。
 そんな迷える人が1人でもいち早く脱出し、研究の本分である自分の研究に向き合う時間を少しでも増やすことができることを願っている。
 
 どんな高出力のエンジンを積んでいても進む方向がわからなければ、水の泡。<br>
 力の効率：$\cos\theta$<br>
-の$\theta$が0にできるだけ近づける、研究者の卵にとっての滑走路がこのサイトであれば、さいわいである。
+の$\theta$が0にできるだけ近づける、研究者の卵にとっての滑走路としてこのサイトが少しでも役に立つのであればと願い、解説していく。
 
 # 論文
 論文との接し方がわからない...<br>
@@ -47,14 +47,37 @@
 
 ## 論文の探し方
 ### 論文検索用エンジン
-今日主流となっている論文の探し方は、ネット検索。たとえば、以下のものがある（筆者はもっぱらGoogle Scholar）。<br>
+今日主流となっている論文の探し方は、ネット検索。たとえば、以下の表 \@ref(tab:SearchEngines) がある（筆者はもっぱらGoogle Scholar）。<br>
 
-- Google Scholar
-- Web of Science
-- PubMed
-- CiNii Research
+```{r SearchEngines, echo=FALSE}
+library(gt)
+library(gtExtras)
+library(tidyverse)
 
-以下、説明する際はGoogle Scholarであることをご容赦下さい。
+data.frame("Engine" = c("Google Scholar", 
+                        "Web of Science", 
+                        "PubMed", 
+                        "CiNii Research"),
+           "Logo" = c("https://seeklogo.com/images/G/google-scholar-logo-EEEC8EE46B-seeklogo.com.png",
+                      "https://libraries.emory.edu/sites/default/files/styles/coh_x_large/public/2022-07/Clarivate_Logo.png?itok=eDkE0toU",
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/US-NLM-PubMed-Logo.svg/250px-US-NLM-PubMed-Logo.svg.png",
+                      "https://cir.nii.ac.jp/static/images/ci-home-research.png")) %>% 
+  gt(caption = "代表的な検索エンジン") %>% 
+  ##画像の挿入
+  gt_img_rows(Logo, height = 35) %>% 
+  ##列名の変更
+  cols_label("Engine" = "論文検索エンジン",
+             "Logo" = "ロゴ") %>% 
+  gt_theme_espn() %>% 
+  cols_align(align = "center")
+
+
+  
+```
+
+
+
+以下、説明する際はGoogle Scholarであることをご容赦いただきたい。
 
 ### 検索方法
 自分の興味・関心のあるキーワードを英語で知る必要がある。<br>
@@ -130,11 +153,40 @@
 50-100本ほど論文を読むと吸収する知識量が少なくなり、漸近線が見えてくるはず。<br>
 論文丸々一本精読する義理は全くないし、読む必要がある論文はごく少数。
 
-### 論文読解アシストAI
-論文初心者にとっての大きな助けとなる。
+### 論文関連AI
+論文初心者にとっての大きな助けとなるかもしれない（表 \@ref(tab:paperAI)）。
 
-[SciSpace](https://typeset.io/) ![](https://scispace.com/static/scispace-logo.svg){width=10%}
-: 論文内容について質問するとチャット形式で返答してくれる。
+```{r paperAI, echo=FALSE}
+data.frame("app" = c("Consensus",
+                     "Gamma",
+                     "SciSpace Copilot",
+                     "Elicit"),
+           "logo" = c("https://consensus.app/home/wp-content/themes/confluance/images/redesign/home/logo-full.png",
+                      "https://uploads-ssl.webflow.com/62e823626cd4fdd0e5dc1527/62e823626cd4fdc26bdc1576_Gamma.svg",
+                      "https://www.aitoolsclub.com/content/images/2023/08/Screenshot-2023-08-04-221152.png",
+                      "https://blog.elicit.com/content/images/2023/09/elicit-logo-4.png")) %>% 
+  gt(caption = "代表的な論文アシストAI") %>% 
+  ##画像の挿入
+  gt_img_rows(logo, height = 35) %>% 
+  ##列名の変更
+  cols_label("app" = "論文読解AI",
+             "logo" = "ロゴ") %>% 
+  gt_theme_espn() %>% 
+  cols_align(align = "center")
+
+```
+
+Consensus
+: リサーチクエスチョンに対して、関連するレビューや引用が多い論文を紹介してくれる。
+
+Gamma
+: 要望内容に応じてプレゼン資料を作成してくれる。論文のURLやDOIを入力するとその論文に関連する情報を視覚的に提供する。 
+
+SciSpace
+: 論文読解アシストAI。論文内容について質問するとチャット形式で返答してくれる。
+
+Elicit
+: リサーチクエスチョンに対して実在する論文を引用して返答してくれる。
 
 ## 論文の記録方法
 論文は一生かけても読み切れない。それくらい膨大な論文数が日々生まれている。<br>
@@ -179,7 +231,11 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 
 
 
+<!-- ## 論文投稿先の検討 -->
+<!-- ### インパクトファクター（IF） -->
+<!-- #### IFの定義 -->
 
+<!-- ### ジャーナルの検討 -->
 
 
 
