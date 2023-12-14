@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | 研究者の卵のいろは</title>
-  <meta name="description" content="Page not found | 研究者の卵のいろは" />
+  <title>5 R | 研究者の卵のいろは</title>
+  <meta name="description" content="5 R | 研究者の卵のいろは" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | 研究者の卵のいろは" />
+  <meta property="og:title" content="5 R | 研究者の卵のいろは" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | 研究者の卵のいろは" />
+  <meta name="twitter:title" content="5 R | 研究者の卵のいろは" />
   
   
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="analysis.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -212,18 +212,154 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="r" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> R<a href="how-to-r.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>研究者がよく使っている無料分析ソフトの１つ。</p>
+<div id="how-to-r" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> how to R<a href="how-to-r.html#how-to-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>インストールなどの初期設定は次節以降扱う。<br>
+本節では、前処理や結果の出力の勉強について紹介する。<br>
+とにかく、便利さを実感してRと友達になろう。</p>
+<!-- Rについて本はNotionの「じんるい読書記録データベース」に紹介されているので、ここでは割愛し、ネットの情報を紹介する。 -->
+<ul>
+<li><a href="https://www.jaysong.net/RBook/">わたしたちのR</a>:
+ざっくり勉強するのによさそうなサイト。</li>
+<li><a href="https://r-graph-gallery.com/index.html">The R Graph Gallery</a>: Rで作図するときに重宝するサイト。</li>
+</ul>
+<p>Rの本は実は英語で無料公開されていることが多い。非常にありがたい。ネット上のものは常に更新されているため、本と内容が違うことがある。</p>
+<ul>
+<li><p><a href="https://r4ds.had.co.nz/">R for data science</a>:
+邦訳『Rではじめるデータサイエンス』のサイト。</p></li>
+<li><p><a href="https://r-graphics.org/">R Graphic Cookbook</a>:
+邦訳『Rグラフィックスクックブック』のサイト。</p></li>
+<li><p><a href="https://gedevan-aleksizde.github.io/rmarkdown-cookbook/">R Markdown Cookbook</a>:
+この本はなんと日本語で読める。</p></li>
+</ul>
+</div>
+<div id="rrstudiortoolsのインストール" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> R・RStudio・Rtoolsのインストール<a href="how-to-r.html#rrstudiortoolsのインストール" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R本体をインストールし、RStudioもインストールする。以下のリンクからインストールできる。
+<a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
+<div id="言語設定の確認" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> 言語設定の確認<a href="how-to-r.html#言語設定の確認" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>言語設定によっては日本語がバグの原因となり、日本語の部分が後で何を書いたのかわからなくなる。
+必ずUTF-8にすること。UTF-8で指定しないとコードの日本語がすべて文字化けしてしまう(T_T)<br>
+設定方法は、</p>
+<p>Tools &gt; Global Options &gt; Code &gt; Saving</p>
+<p>と進み、真ん中にあるDefault text encoddingでUTF-8を指定。</p>
+</div>
+</div>
+<div id="rmarkdownの作成" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Rmarkdownの作成<a href="how-to-r.html#rmarkdownの作成" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Rで研究を始めるなら、RファイルではなくRmdファイルにすることを強く勧める。
+初期設定ではSourceペインに結果が表示されてしまう。これが嫌な人は、</p>
+<p>Tools &gt; Global Options &gt; R Markdown &gt; Basics</p>
+<p>と進み、真ん中あたりの”Show output inline for all RMarkdown documents”のチェックを外すと解決する。</p>
+</div>
+<div id="文献整理のテンプレート" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> 文献整理のテンプレート<a href="how-to-r.html#文献整理のテンプレート" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>テンプレートを公開している（<a href="https://github.com/tabutan/study_method">本稿のファイル</a>）。
+先のリンクからアクセスしてファイルをコピペすれば、RStudioで文献調査の体制は整った。</p>
+<dl>
+<dt>Rmdファイル</dt>
+<dd>
+本文やコードを記述するファイル
+</dd>
+<dt>bibファイル</dt>
+<dd>
+引用文献を記述するファイル
+</dd>
+<dt>cslファイル</dt>
+<dd>
+ジャーナルごとに指定されているフォーマットを指定できる。<a href="https://www.zotero.org/styles">Zotero Style Repository</a>で投稿したいジャーナルを検索するとそのフォーマットにあったcslファイルをダウンロードできて役に立つ。
+</dd>
+<dt>ymlファイル</dt>
+<dd>
+bookdown形式にするにあたっての構造を指定するファイル
+</dd>
+<dt>cssファイル</dt>
+<dd>
+文章のフォーマットを指定するファイル
+</dd>
+</dl>
+</div>
+<div id="github" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> GitHub<a href="how-to-r.html#github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>コードの公開などで一般によく使われている。ここにファイルを保存することでバージョン管理を行うことができ、内容変更のたびにバックアップ用にファイルを作る必要がなくなる。</p>
+<!-- ### GitHubアカウントの作成 -->
+<!-- ### Gitソフトウェアのインストール -->
+<!-- ### リポジトリ－の作成 -->
+<!-- ### commmit & push -->
+<!-- コメントを付けてコミットし、その後プッシュすることでGitHubに保存される。 -->
+<!-- ### pull -->
+<!-- GitHubに保存したファイルをPCに取り込む。 -->
+<!-- ## RMarkdownでのLaTeXの使いかた -->
+<!-- $\LaTeX$ -->
+</div>
+</div>
+<div id="引用文献" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> 引用文献<a href="how-to-r.html#引用文献" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+
+<div id="refs" class="references csl-bib-body" line-spacing="2">
+<div class="csl-entry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">国立大学共同利用・共同研究拠点協議会. <a href="https://youtu.be/a7K1fKX-kRM?si=kq3Ip7S_BnsuluF4">すぐにわかる学術書の読み方～大量の本にどう向き合うか～</a>. (2023).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">外山滋比古. <em>思考の整理学</em>. (筑摩書房, 1986).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Stardy -河野玄斗の神授業. <a href="https://www.youtube.com/watch?v=0h_-MwxGcaU">勉強の為に買ってよかったもの３選を教えます</a>. (2021).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">野外安全管理委員会. <a href="https://doi.org/10.18960/seitai.69.0_S1">フィールド調査における安全管理マニュアル</a>. <em>日本生態学会誌</em> <strong>69</strong>, (2019).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">ansonyjack. <a href="https://youtu.be/gsUzpJNtl3M">古武術式「ナンバ歩き」</a>. (2019).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">DOKIDOKIPICK. <a href="https://youtu.be/wxiA6ZT-JrI">【山旅クラブ】登山、登りの基本（急な長い登りでも、省エネでバテずに楽に登る方法）</a>. (2017).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">DOKIDOKIPICK. <a href="https://youtu.be/e2ExIhIiM4I">【山旅クラブ】登山、下りの基本（膝に負担なく、スリップしない下山方法）</a>. (2017).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">DOKIDOKIPICK. <a href="https://youtu.be/Bd4M1b-Yx_w">【山旅クラブ】階段の上り下り方法（ 膝関節・股関節・足首の柔軟訓練方法）</a>. (2017).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">DOKIDOKIPICK. <a href="https://youtu.be/-4_qGphpVmw">【山旅クラブ】楽な段差（石段）の上り下り</a>. (2017).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">DOKIDOKIPICK. <a href="https://youtu.be/QSFR22tfc2g">山旅クラブ】靴の履き方（足が痛くならない靴の履き方（ほどけない靴紐の結び方）</a>. (2017).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">輪舞曲鈴の庭. <a href="https://www.youtube.com/watch?v=ysTBZLLanfg">トレッキングシューズの履き方と紐の結び方</a>. (2020).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">山旅旅. <a href="https://yamatabitabi.com/archives/151957/">登山でほどけない靴紐の3種類の結び方-徹底解説</a>.</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">山と渓谷ch. <a href="https://www.yamakei-online.com/yama-ya/detail.php?id=2335">読図の基本</a>.</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">P.マーティン(著), P.ベイトソン(著), 粕谷英一(翻訳), 細馬宏通(翻訳) &amp; 近雅博(翻訳). <em>行動研究入門―動物行動の観察から解析まで</em>. (東海大学出版会, 1990).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">井上英治, 中川尚史 &amp; 南正人. <em>野生動物の行動観察法: 実践 日本の哺乳類学</em>. (東京大学出版会, 2013).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">マリアン・S・ドーキンス(著) &amp; 黒沢令子(翻訳). <em>動物行動の観察入門-計画から解析まで</em>. (白揚社, 2015).</div>
+</div>
+<div class="csl-entry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">吉野源三郎. <em>君たちはどう生きるか</em>. (岩波文庫, 1982).</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="analysis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
