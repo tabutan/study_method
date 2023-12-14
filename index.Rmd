@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE,
                       cache = TRUE)
 ```
 
-# ねらい{-}
+# ねらい {-}
 学部・修士から本格的に研究するとき、いくつもの難関が立ちはだかる。
 
 - 論文
