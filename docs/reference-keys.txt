@@ -1,10 +1,12 @@
 tab:SearchEngines
+fig:JapMonkeys
 tab:paperAI
 fig:sketch
 fig:virtual
 論文
 論文の探し方
 論文検索用エンジン
+キーワード検索
 検索方法
 芋づる式
 レビューを探す

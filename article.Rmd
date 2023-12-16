@@ -59,6 +59,14 @@ data.frame("Engine" = c("Google Scholar",
 
 以下、説明する際はGoogle Scholarであることをご容赦いただきたい。
 
+### キーワード検索
+探そうとするキーワードが果たしてどれくらい使われているのか気になる時がある。その時に[GoogleNgramViewer](https://books.google.com/ngrams/)が役に立つ。例えば、1990年代あたりから、Japanese monkeysはあまり使われなくなり、代わりにJapanese macaquesが増えていることがわかる（図 \@ref(fig:JapMonkeys)）。
+
+```{r JapMonkeys, echo=FALSE, fig.cap="Google Books Ngram Viwerを用いたキーワード検索<br>"}
+knitr::include_graphics("figure/JapMonkeys.png")
+```
+
+
 ### 検索方法
 自分の興味・関心のあるキーワードを英語で知る必要がある。<br>
 これがわからないと検索はただただ苦痛。<br>
