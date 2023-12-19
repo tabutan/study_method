@@ -189,7 +189,31 @@ Elicit
 ### 論文管理ソフト
 論文を自分のPCにPDFで保存するだけではなかなか効率が悪い。
 忘れたときの備忘録をつくることは研究上必須能力である。
-論文管理ソフトには以下のようなものがある。どのソフトでもタブレットとPCの情報を同期できる。特に、タブレットで手書き入力できるのはありがたい。
+論文管理ソフトには以下のようなものがある（表 \@ref(tab:PaperManager)）。どのソフトでもタブレットとPCの情報を同期できる。特に、タブレットで手書き入力できるのはありがたい。
+
+```{r PaperManager, echo=FALSE}
+library(gt)
+library(gtExtras)
+library(tidyverse)
+
+data.frame("Engine" = c("Mendeley", 
+                        "PaperPile", 
+                        "EndNote"),
+           "Logo" = c("https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png",
+                      "https://assets.st-note.com/production/uploads/images/94061679/4bba27c25d07a5df23a0321f014eb6fa.png",
+                      "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_79d1e55423c4e496e5de32d1d55e2efb/endnote.png")) %>% 
+  gt(caption = "代表的な論文管理ソフト") %>% 
+  ##画像の挿入
+  gt_img_rows(Logo, height = 35) %>% 
+  ##列名の変更
+  cols_label("Engine" = "論文管理ソフト",
+             "Logo" = "ロゴ") %>% 
+  gt_theme_espn() %>% 
+  cols_align(align = "center")
+
+
+  
+```
 
 - Mendeley
 - EndNote

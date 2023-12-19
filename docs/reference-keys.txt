@@ -1,6 +1,7 @@
 tab:SearchEngines
 fig:JapMonkeys
 tab:paperAI
+tab:PaperManager
 fig:sketch
 fig:virtual
 論文
