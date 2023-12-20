@@ -23,7 +23,7 @@
 <meta name="author" content="tabutan" />
 
 
-<meta name="date" content="2023-12-19" />
+<meta name="date" content="2023-12-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -184,7 +184,10 @@ div.csl-indent {
 <li class="chapter" data-level="4.1.2" data-path="analysis.html"><a href="analysis.html#バーチャルデスクトップ"><i class="fa fa-check"></i><b>4.1.2</b> バーチャルデスクトップ</a></li>
 <li class="chapter" data-level="4.1.3" data-path="analysis.html"><a href="analysis.html#注意点"><i class="fa fa-check"></i><b>4.1.3</b> 注意点</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="analysis.html"><a href="analysis.html#データ打込み"><i class="fa fa-check"></i><b>4.2</b> データ打込み</a></li>
+<li class="chapter" data-level="4.2" data-path="analysis.html"><a href="analysis.html#データ打込み"><i class="fa fa-check"></i><b>4.2</b> データ打込み</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="analysis.html"><a href="analysis.html#データの打ち込みの順番"><i class="fa fa-check"></i><b>4.2.1</b> データの打ち込みの順番</a></li>
+</ul></li>
 <li class="chapter" data-level="4.3" data-path="analysis.html"><a href="analysis.html#ビデオ分析"><i class="fa fa-check"></i><b>4.3</b> ビデオ分析</a>
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="analysis.html"><a href="analysis.html#時間の特定"><i class="fa fa-check"></i><b>4.3.1</b> 時間の特定</a></li>
@@ -253,6 +256,10 @@ div.csl-indent {
 <div id="データ打込み" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> データ打込み<a href="analysis.html#データ打込み" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>データ打ち込みするときは、1データを1行で記入していき、結果として縦長のデータセットが出来上がる。詳しくは『RユーザーのためのRStudio[実践]入門』<span class="citation"><sup><a href="#ref-matsumura2021">18</a></sup></span>で「tidyなデータ」とは何かを学習できる。</p>
+<div id="データの打ち込みの順番" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> データの打ち込みの順番<a href="analysis.html#データの打ち込みの順番" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>データ量や季節変化を考慮するか等いくつか考慮する点があるが、データ量が多くて困る場合は以下の分割するやり方が参考になるかもしれない:<br> 規則的に打ち込む。<br>季節ごと、月ごとに3日分等データ打ちしたら違う季節や月のデータを打つ。こうすることで、打込み途中で解析する際に全体の傾向を知るうえでデータのバイアスが生じにくい。打込み途中に解析する際はExcelでやるとファイルがクラッシュして悲惨なことになる。Rはその点心配不要で、途中解析しやすい。</p>
+</div>
 </div>
 <div id="ビデオ分析" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> ビデオ分析<a href="analysis.html#ビデオ分析" class="anchor-section" aria-label="Anchor link to header"></a></h2>
