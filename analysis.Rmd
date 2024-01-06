@@ -47,3 +47,6 @@ knitr::include_graphics("figure/virtualdesktop.png")
 
 ### 動画のメモ
 Play Memories Homeでは、タイトルとメモを記入する欄があり、アプリ内で検索すると動画を絞れるようになっている。便利。
+
+
+

@@ -1,3 +1,4 @@
+tab:Wheather
 tab:SearchEngines
 fig:JapMonkeys
 tab:paperAI
@@ -8,12 +9,15 @@ fig:virtual
 山歩き
 疲れない歩き方
 けがをしないようにするには
+筋骨格系と神経系の連動
+足底腱膜炎
 靴紐の結び方
 登山靴の選び方
 地図読み
 地形図
 gps
 天気
+天気図の読み取り
 天気予報サイトアプリ
 落雷
 装備品
@@ -47,6 +51,7 @@ gps
 rmarkdown
 論文投稿先の検討
 ジャーナルの検討
+インパクトファクターの調べ方
 論文原稿の推敲
 観察
 識別方法
@@ -76,11 +81,3 @@ rrstudiortoolsのインストール
 rmarkdownの作成
 文献整理のテンプレート
 github
-引用文献
-筋骨格系と神経系の連動
-足底腱膜炎
-tab:Wheather
-インパクトファクターの調べ方
-実行環境-unnumbered
-引用文献-unnumbered
-howtor

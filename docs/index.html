@@ -31,7 +31,7 @@
   
   
 
-<link rel="next" href="はじめに.html"/>
+<link rel="next" href="調査地での安全対策.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
@@ -123,6 +125,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="custom_style.css" type="text/css" />
 </head>
@@ -137,8 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>要旨</a></li>
-<li class="chapter" data-level="" data-path="はじめに.html"><a href="はじめに.html"><i class="fa fa-check"></i><strong>0</strong> はじめに</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><strong>0</strong> はじめに</a></li>
 <li class="chapter" data-level="1" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html"><i class="fa fa-check"></i><b>1</b> 調査地での安全対策</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#山歩き"><i class="fa fa-check"></i><b>1.1</b> 山歩き</a>
@@ -159,8 +182,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#天気"><i class="fa fa-check"></i><b>1.3</b> 天気</a>
 <ul>
-<li class="chapter" data-level="1.3.1" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#天気予報サイトアプリ"><i class="fa fa-check"></i><b>1.3.1</b> 天気予報サイト・アプリ</a></li>
-<li class="chapter" data-level="1.3.2" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#落雷"><i class="fa fa-check"></i><b>1.3.2</b> 落雷</a></li>
+<li class="chapter" data-level="1.3.1" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#天気図の読み取り"><i class="fa fa-check"></i><b>1.3.1</b> 天気図の読み取り</a></li>
+<li class="chapter" data-level="1.3.2" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#天気予報サイトアプリ"><i class="fa fa-check"></i><b>1.3.2</b> 天気予報サイト・アプリ</a></li>
+<li class="chapter" data-level="1.3.3" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#落雷"><i class="fa fa-check"></i><b>1.3.3</b> 落雷</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#装備品"><i class="fa fa-check"></i><b>1.4</b> 装備品</a></li>
 <li class="chapter" data-level="1.5" data-path="調査地での安全対策.html"><a href="調査地での安全対策.html#危険生物"><i class="fa fa-check"></i><b>1.5</b> 危険生物</a>
@@ -282,18 +306,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="author"><em>tabutan</em></p>
 <p class="date"><em>2024-01-06</em></p>
 </div>
-<div id="要旨" class="section level1 unnumbered hasAnchor">
-<h1>要旨<a href="index.html#要旨" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>学部・修士から本格的に研究するとき、学ぶべき多くのことがある。</p>
-<ul>
-<li>調査地での安全対策</li>
-<li>論文</li>
-<li>動物行動の観察</li>
-<li>分析方法</li>
-<li>R</li>
-</ul>
-<p>以上の事柄について見ていき、少しでも研究のスタートを切りやすいように工夫した。</p>
-<p>この論文の読み方をはじめとする研究の「いろは」を個人的な経験からまとめてみた。本文は<a href="https://tabutan.github.io/study_method/">こちら</a>。</p>
+<div id="はじめに" class="section level1 unnumbered hasAnchor">
+<h1><strong>0</strong> はじめに<a href="index.html#はじめに" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>研究の仕方がわからない…<br>
+研究に興味があるが、いざ研究をするときに戸惑う人は多いだろう。<br></p>
+<p>意外と全然時間がない…<br>
+諸々のことが研究をするときに求められることに戸惑うだろう。</p>
+<!-- 筆者は博士進学まで研究とは何かもわからず、苦心した。<br> -->
+<!-- 学部生時代、修士時代にあったらよかったと筆者が感じたことを~~独断と偏見で~~まとめてみた。 -->
+<p><strong>最初は何だって難しい</strong>。<br></p>
+<p>最初の困難を乗り越えるのに多大な労力がいることを覚悟しよう。<br>
+それでも心が折れかけるのは世の常。<br>
+本稿は、研究のことをあまりわかっていないと感じる悩み多き研究者の卵を対象にしている。
+そんな迷える人が1人でもいち早く脱出し、研究の本分である自分の研究に向き合う時間を少しでも増やすことができることを願っている。</p>
+<p>どんな高出力のエンジンを積んでいても進む方向がわからなければ、水の泡。<br></p>
+<p>力の効率：<span class="math inline">\(\cos\theta\)</span><br></p>
+<p>が1にできるだけ近づける、研究者の卵にとっての滑走路としてこのサイトが少しでも役に立つのであればと願い、綴っていく。</p>
+
 </div>
             </section>
 
@@ -301,7 +330,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="はじめに.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="調査地での安全対策.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

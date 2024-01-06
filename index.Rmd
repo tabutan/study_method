@@ -7,7 +7,8 @@ output:
     split_bib: yes  
     number_sections: true 
     toc_depth: 4 
-    css: custom_style.css   
+    css: custom_style.css  
+    df_print: paged 
 site: bookdown::bookdown_site  
 output_dir: "docs"  
 documentclass: book  
@@ -25,22 +26,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE,
                       cache = TRUE)
 ```
 
-# 要旨 {.unnumbered}
-学部・修士から本格的に研究するとき、学ぶべき多くのことがある。
 
-
-- 調査地での安全対策
-- 論文
-- 動物行動の観察
-- 分析方法
-- R
-
-以上の事柄について見ていき、少しでも研究のスタートを切りやすいように工夫した。
-
-この論文の読み方をはじめとする研究の「いろは」を個人的な経験からまとめてみた。本文は[こちら](https://tabutan.github.io/study_method/)。
-
-
-# **0** はじめに {.unnumbered}
+# **0** はじめに {-}
 
 研究の仕方がわからない...<br>
 研究に興味があるが、いざ研究をするときに戸惑う人は多いだろう。<br>
