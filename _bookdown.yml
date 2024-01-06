@@ -1,11 +1,11 @@
 book_filename: "フィールド研究者の卵のいろは"  
 rmd_files:                    
   - index.Rmd
-  - research-site.Rmd
+  - research_site.Rmd
   - article.Rmd
   - observation.Rmd
   - analysis.Rmd
-  - how-to-r.Rmd
+  - how_to_r.Rmd
   - sessioninfo.Rmd
 output_dir: "docs"  
 language:

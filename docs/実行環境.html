@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 分析方法 | フィールド研究者の卵のいろは</title>
-  <meta name="description" content="4 分析方法 | フィールド研究者の卵のいろは" />
+  <title>実行環境 | フィールド研究者の卵のいろは</title>
+  <meta name="description" content="実行環境 | フィールド研究者の卵のいろは" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 分析方法 | フィールド研究者の卵のいろは" />
+  <meta property="og:title" content="実行環境 | フィールド研究者の卵のいろは" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 分析方法 | フィールド研究者の卵のいろは" />
+  <meta name="twitter:title" content="実行環境 | フィールド研究者の卵のいろは" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="観察.html"/>
-<link rel="next" href="r.html"/>
+<link rel="prev" href="r.html"/>
+<link rel="next" href="引用文献.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -122,28 +122,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <style type="text/css">
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-</style>
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 <link rel="stylesheet" href="custom_style.css" type="text/css" />
@@ -298,79 +276,42 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="分析方法" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">4</span> 分析方法<a href="分析方法.html#分析方法" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>ここではプログラミング言語以外での分析方法について解説する。</p>
-<div id="分析の準備" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> 分析の準備<a href="分析方法.html#分析の準備" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>データ分析する際は、大きい・多くのパソコン画面があるとないとで作業効率が大きく異なる。作業効率を上げる簡単な方法、1. デュアルディスプレイ、2. バーチャルデスクトップの2つを紹介する。</p>
-<div id="デュアルディスプレイ" class="section level3 hasAnchor" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> デュアルディスプレイ<a href="分析方法.html#デュアルディスプレイ" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>ディスプレイモニターを別途購入しパソコンに接続することで画面を拡大できる。安いもので十分対応できる。</p>
-</div>
-<div id="バーチャルデスクトップ" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> バーチャルデスクトップ<a href="分析方法.html#バーチャルデスクトップ" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>バーチャルデスクトップは1つのパソコン画面で複数の画面を使える機能。Windows11だとタスクバーに黒い四角形と白い四角形が重なっているアイコンがある。ここをクリックすると現在表示されている画面と新しいデスクトップが表示されるので、’+’をクリックすると新しいデスクトップが作成される。</p>
-<div class="figure" style="text-align: left"><span style="display:block;" id="fig:virtual"></span>
-<img src="figure/virtualdesktop.png" alt="Windows11でのタスクバー"  />
-<p class="caption">
-図4.1: Windows11でのタスクバー
-</p>
-</div>
-<p>操作方法：<br>
-左隣のデスクトップに移る：[Windows] + [Ctrl] + [←]<br>
-右隣のデスクトップに移る：[Windows] + [Ctrl] + [→]</p>
-<p>デュアルディスプレイとバーチャルデスクトップの2つを使っていると一つの画面で作業する何倍ものスピードで作業できる点でお勧めする。</p>
-</div>
-<div id="注意点" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> 注意点<a href="分析方法.html#注意点" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>メモリーが小さいパソコンだと、同時作業できる量が限られる。メモリーが16BGか32GBだと安心して作業できる。</p>
-</div>
-</div>
-<div id="データ打込み" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> データ打込み<a href="分析方法.html#データ打込み" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>データ打ち込みするときは、1データを1行で記入していき、結果として縦長のデータセットが出来上がる。詳しくは『RユーザーのためのRStudio[実践]入門』<span class="citation"><sup><a href="#ref-matsumura2021">1</a></sup></span>で「tidyなデータ」とは何かを学習できる。</p>
-<div id="データの打ち込みの順番" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> データの打ち込みの順番<a href="分析方法.html#データの打ち込みの順番" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>データ量や季節変化を考慮するか等いくつか考慮する点があるが、データ量が多くて困る場合は以下の分割するやり方が参考になるかもしれない:<br> 規則的に打ち込む。<br>季節ごと、月ごとに3日分等データ打ちしたら違う季節や月のデータを打つ。こうすることで、打込み途中で解析する際に全体の傾向を知るうえでデータのバイアスが生じにくい。打込み途中に解析する際はExcelでやるとファイルがクラッシュして悲惨なことになる。Rはその点心配不要で、途中解析しやすい。</p>
-</div>
-</div>
-<div id="ビデオ分析" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> ビデオ分析<a href="分析方法.html#ビデオ分析" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>ビデオ分析はノート記録よりずっと時間がかかる。しかし、工夫をすれば時間短縮することが可能。データ打込み時間に関してはコスパを追求すべし。</p>
-<div id="時間の特定" class="section level3 hasAnchor" number="4.3.1">
-<h3><span class="header-section-number">4.3.1</span> 時間の特定<a href="分析方法.html#時間の特定" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>ビデオ分析の際に工夫しないと時間がかかるのがある行動を探すときの時間の特定である。これを解決する方法として、いくつかのアプリがある。</p>
-<ul>
-<li>Play Memories Home</li>
-<li>MediaInfo</li>
-</ul>
-<p>1番目はSonyのアプリで、Sony以外のデバイスで撮影したものでもできるかもしれないが試したことはない。2番目は、どの動画ファイルでもOK。これらを使うことで動画開始時間を特定することができ、速やかに動画分析することが可能。</p>
-</div>
-<div id="瞬間サンプリングデータ場面の特定" class="section level3 hasAnchor" number="4.3.2">
-<h3><span class="header-section-number">4.3.2</span> 瞬間サンプリングデータ場面の特定<a href="分析方法.html#瞬間サンプリングデータ場面の特定" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>上記のものでは瞬間サンプリングした場面の特定できない。この時に役に立つのがWindowsに基本装備されている（はずの）メディアプレイヤー。前に30秒ごとに、後ろに10秒ごとにコマ送りできる。これにより瞬時に次のサンプリングポイントを確認できる。</p>
-</div>
-<div id="動画のメモ" class="section level3 hasAnchor" number="4.3.3">
-<h3><span class="header-section-number">4.3.3</span> 動画のメモ<a href="分析方法.html#動画のメモ" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Play Memories Homeでは、タイトルとメモを記入する欄があり、アプリ内で検索すると動画を絞れるようになっている。便利。</p>
-
-</div>
-</div>
-</div>
-<h3>引用文献<a href="引用文献.html#引用文献" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body" line-spacing="2">
-<div id="ref-matsumura2021" class="csl-entry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">松村優哉, 湯谷啓明, 紀ノ定保礼 &amp; 前田和寛. <em>改訂2版 Rユーザのための RStudio［実践］入門</em>. (技術評論社, 2021).</div>
-</div>
+<div id="実行環境" class="section level1 unnumbered hasAnchor">
+<h1>実行環境<a href="実行環境.html#実行環境" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="実行環境.html#cb1-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<pre><code>## R version 4.3.1 (2023-06-16 ucrt)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 11 x64 (build 22631)
+## 
+## Matrix products: default
+## 
+## 
+## locale:
+## [1] LC_COLLATE=Japanese_Japan.utf8  LC_CTYPE=Japanese_Japan.utf8   
+## [3] LC_MONETARY=Japanese_Japan.utf8 LC_NUMERIC=C                   
+## [5] LC_TIME=Japanese_Japan.utf8    
+## 
+## time zone: Asia/Tokyo
+## tzcode source: internal
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## loaded via a namespace (and not attached):
+##  [1] digest_0.6.33     R6_2.5.1          bookdown_0.35     fastmap_1.1.1    
+##  [5] xfun_0.41         cachem_1.0.8      knitr_1.45        htmltools_0.5.7  
+##  [9] rmarkdown_2.25    lifecycle_1.0.4   cli_3.6.1         sass_0.4.7       
+## [13] jquerylib_0.1.4   compiler_4.3.1    rstudioapi_0.15.0 tools_4.3.1      
+## [17] evaluate_0.23     bslib_0.6.0       yaml_2.3.7        jsonlite_1.8.7   
+## [21] rlang_1.1.2</code></pre>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="観察.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="引用文献.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
