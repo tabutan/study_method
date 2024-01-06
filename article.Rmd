@@ -215,10 +215,6 @@ data.frame("Engine" = c("Mendeley",
   
 ```
 
-- Mendeley
-- EndNote
-- PaperPile
-
 
 ### 研究ノート
 筆者は捨て紙の裏にメモを書いていてよくなくすタイプだった。<br>
@@ -261,6 +257,9 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 [JournalGuide](https://www.journalguide.com/)
 : タイトル、キーワードから合いそうなジャーナルを提案してくれる。
 
+### インパクトファクターの調べ方
+[Journal of Citation Reports](https://jcr.clarivate.com/jcr/home)
+: 投稿先のインパクトファクターを検討したい場合に役立つ。
 
 ## 論文原稿の推敲
 

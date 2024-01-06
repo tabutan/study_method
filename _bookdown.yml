@@ -6,6 +6,7 @@ rmd_files:
   - observation.Rmd
   - analysis.Rmd
   - how-to-r.Rmd
+  - sessioninfo.Rmd
 output_dir: "docs"  
 language:
   label:

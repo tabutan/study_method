@@ -37,8 +37,7 @@ Tools > Global Options > Code > Saving
 と進み、真ん中にあるDefault text encoddingでUTF-8を指定。
 
 ## Rmarkdownの作成
-Rで研究を始めるなら、RファイルではなくRmdファイルにすることを強く勧める。
-初期設定ではSourceペインに結果が表示されてしまう。これが嫌な人は、
+Rで研究を始めるなら、RファイルではなくRmdファイルにすることを強く勧める。その理由として、結果とその結果に対する自分のコメントを書けることが大きい。初期設定ではSourceペインに結果が表示されてしまう。これが嫌な人は、
 
 Tools > Global Options > R Markdown > Basics
 
@@ -84,4 +83,3 @@ cssファイル
 <!-- $\LaTeX$ -->
 
 
-# 引用文献

@@ -10,8 +10,7 @@
 ### バーチャルデスクトップ
 バーチャルデスクトップは1つのパソコン画面で複数の画面を使える機能。Windows11だとタスクバーに黒い四角形と白い四角形が重なっているアイコンがある。ここをクリックすると現在表示されている画面と新しいデスクトップが表示されるので、'+'をクリックすると新しいデスクトップが作成される。
 
-```{r virtual, echo=FALSE, fig.cap="Windows11でのタスクバー", fig.align='left'}
-library(tidyverse)
+```{r virtual, echo=FALSE, warning=FALSE, fig.cap="Windows11でのタスクバー", fig.align='left'}
 
 knitr::include_graphics("figure/virtualdesktop.png")
 ```
