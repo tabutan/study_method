@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6 R | フィールド研究者の卵のいろは</title>
-  <meta name="description" content="6 R | フィールド研究者の卵のいろは" />
+  <title>3 識別 | フィールド研究者の卵のいろは</title>
+  <meta name="description" content="3 識別 | フィールド研究者の卵のいろは" />
   <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6 R | フィールド研究者の卵のいろは" />
+  <meta property="og:title" content="3 識別 | フィールド研究者の卵のいろは" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6 R | フィールド研究者の卵のいろは" />
+  <meta name="twitter:title" content="3 識別 | フィールド研究者の卵のいろは" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="分析方法.html"/>
-<link rel="next" href="実行環境.html"/>
+<link rel="prev" href="論文.html"/>
+<link rel="next" href="観察.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -302,88 +302,98 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="r" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">6</span> R<a href="r.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>研究者がよく使っている無料分析ソフトの１つ。現代の動物行動学、動物生態学において不可欠かつ基本的なツール。本章はWindowsでの説明に限定していることに注意。</p>
-<div id="how-to-r" class="section level2 hasAnchor" number="6.1">
-<h2><span class="header-section-number">6.1</span> How to R<a href="r.html#how-to-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>インストールなどの初期設定は次節以降扱う。<br>
-本節では、前処理や結果の出力の勉強について紹介する。<br>
-とにかく、便利さを実感してRと友達になろう。</p>
-<ul>
-<li><a href="https://www.jaysong.net/RBook/">わたしたちのR</a>:
-ざっくり勉強するのによさそうなサイト。</li>
-<li><a href="https://r-graph-gallery.com/index.html">The R Graph Gallery</a>: Rで作図するときに重宝するサイト。</li>
-</ul>
-<p>Rの本は実は英語で無料公開されていることが多い。非常にありがたい。ネット上のものは常に更新されているため、本と内容が違うことがある。</p>
-<ul>
-<li><p><a href="https://r4ds.had.co.nz/">R for data science</a>:
-邦訳『Rではじめるデータサイエンス』のサイト。</p></li>
-<li><p><a href="https://r-graphics.org/">R Graphic Cookbook</a>:
-邦訳『Rグラフィックスクックブック』のサイト。</p></li>
-<li><p><a href="https://gedevan-aleksizde.github.io/rmarkdown-cookbook/">R Markdown Cookbook</a>:
-この本はなんと日本語で読める。</p></li>
-</ul>
-</div>
-<div id="rrstudiortoolsのインストール" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> R・RStudio・Rtoolsのインストール<a href="r.html#rrstudiortoolsのインストール" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>R本体をインストールし、RStudioもインストールする。以下のリンクからインストールできる。
-<a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
-<div id="言語設定の確認" class="section level3 hasAnchor" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> 言語設定の確認<a href="r.html#言語設定の確認" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>言語設定によっては日本語がバグの原因となり、日本語の部分が後で何を書いたのかわからなくなる。
-必ずUTF-8にすること。UTF-8で指定しないとコードの日本語がすべて文字化けしてしまう(T_T)<br>
-設定方法は、</p>
-<p>Tools &gt; Global Options &gt; Code &gt; Saving</p>
-<p>と進み、真ん中にあるDefault text encoddingでUTF-8を指定。</p>
-</div>
-</div>
-<div id="rmarkdownの作成" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> Rmarkdownの作成<a href="r.html#rmarkdownの作成" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Rで研究を始めるなら、RファイルではなくRmdファイルにすることを強く勧める。その理由として、結果とその結果に対する自分のコメントを書けることが大きい。</p>
-<p>Wordで書くと容量が大きい文書ファイルをサクサク書けるうえ、<span class="math inline">\(\LaTeX\)</span>と異なりPDFのみならずワードに変換したり、html形式に変換してネットで公開する等、応用可能性が広いのが特徴。
-初期設定ではSourceペインに結果が表示されてしまう。これが嫌な人は、</p>
-<p>Tools &gt; Global Options &gt; R Markdown &gt; Basics</p>
-<p>と進み、真ん中あたりの”Show output inline for all RMarkdown documents”のチェックを外すと解決する。</p>
-</div>
-<div id="文献整理のテンプレート" class="section level2 hasAnchor" number="6.4">
-<h2><span class="header-section-number">6.4</span> 文献整理のテンプレート<a href="r.html#文献整理のテンプレート" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>テンプレートを公開している（<a href="https://github.com/tabutan/study_method">本稿のファイル</a>）。
-先のリンクからアクセスしてファイルをコピペすれば、RStudioで文献調査の体制は整った。</p>
+<div id="識別" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> 識別<a href="識別.html#識別" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>サルの個体識別と植物の識別について紹介する。</p>
+<div id="植物の識別" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> 植物の識別<a href="識別.html#植物の識別" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>識別の際によく使われる本屋サイトを紹介する。</p>
 <dl>
-<dt>Rmdファイル</dt>
+<dt>1 樹に咲く花（山と渓谷社）</dt>
 <dd>
-本文やコードを記述するファイル
+離弁花１、離弁花２、合弁花・単子葉・裸子植物の３冊１シリーズは重宝する。<br>
 </dd>
-<dt>bibファイル</dt>
+<dt>2 屋久島の植物（著：川原勝征）</dt>
 <dd>
-引用文献を記述するファイル
+コンパクトにまとまっていてどの植物なのか全く見当がつかないときは便利。ステーションにおいてある。<br>
 </dd>
-<dt>cslファイル</dt>
+<dt>3 植物検索図鑑</dt>
 <dd>
-ジャーナルごとに指定されているフォーマットを指定できる。<a href="https://www.zotero.org/styles">Zotero Style Repository</a>で投稿したいジャーナルを検索するとそのフォーマットにあったcslファイルをダウンロードできて役に立つ。
-</dd>
-<dt>ymlファイル</dt>
-<dd>
-bookdown形式にするにあたっての構造を指定するファイル
-</dd>
-<dt>cssファイル</dt>
-<dd>
-文章のフォーマットを指定するファイル
+植物の特徴（葉の付き方、鋸歯の有無、葉脈、樹皮など）がわかるが本で解決できないときに役に立つ（<a href="http://www.chiba-museum.jp/jyumoku2014/kensaku/">リンク</a>）。
 </dd>
 </dl>
 </div>
-<div id="github" class="section level2 hasAnchor" number="6.5">
-<h2><span class="header-section-number">6.5</span> GitHub<a href="r.html#github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>コードの公開などで一般によく使われている。ここにファイルを保存することでバージョン管理を行うことができ、内容変更のたびにバックアップ用にファイルを作る必要がなくなる。</p>
-<!-- ### GitHubアカウントの作成 -->
-<!-- ### Gitソフトウェアのインストール -->
-<!-- ### リポジトリ－の作成 -->
-<!-- ### commmit & push -->
-<!-- コメントを付けてコミットし、その後プッシュすることでGitHubに保存される。 -->
-<!-- ### pull -->
-<!-- GitHubに保存したファイルをPCに取り込む。 -->
-
+<div id="サルの個体識別" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> サルの個体識別<a href="識別.html#サルの個体識別" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>ここで挙げる例は識別できていない状態の人に向けた識別するうえでのヒントにすぎない。<br>
+識別が一番上達する方法は、<br></p>
+<ol style="list-style-type: decimal">
+<li>とにかく真摯に対象動物を見つめ、</li>
+<li>スケッチ（似顔絵など）を描き、</li>
+<li>写真を撮る。<br></li>
+</ol>
+<p>このサイクルを続ける意外に上達する手段はない。識別ポイントは人によって違うことが多いので、他人がつくった識別情報はわからないことも多々ある。最後は結局自分自身で築き上げた判断基準から識別するしかない。<br>
+ここでは、筆者の研究対象であったニホンザルを例に個体識別の方法を説明していく。</p>
+<div id="個体の特徴を抑える" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> 個体の特徴を抑える<a href="識別.html#個体の特徴を抑える" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>スケッチで書ける特徴を３つ、見つけてみよう。<br>
+特徴が１つだけだと他個体と同じ特徴である可能性がまだ高い、２つでも心もとない。３つ見つけられれば、全く同じ特徴をもった紛らわしい個体（性・年齢も似通った個体）はいないはずだ。</p>
+<p><strong>初心者レベル：識別表に書けること</strong></p>
+<ul>
+<li>顔</li>
+<li>手足の指</li>
+<li>尾の長さ・曲がり具合</li>
+<li>身体の大きさ・太り具合</li>
+<li>乳首の長さ・ほくろの有無・左右の長さの偏り</li>
+</ul>
+<p><strong>中級レベル：識別表に書けないこと</strong></p>
+<ul>
+<li>毛並み</li>
+<li>顔やお尻の色具合</li>
+<li>声</li>
+</ul>
+<p><strong>上級者レベル</strong></p>
+<ul>
+<li>歩き方</li>
+<li>シルエット</li>
+<li>顔の雰囲気</li>
+</ul>
+</div>
+<div id="個体識別の手順" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> 個体識別の手順<a href="識別.html#個体識別の手順" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>慣れていない最初のうちは、持ち合わせている情報をフィルターリングすることで個体識別できる可能性がぐっと高まる。</p>
+<ol style="list-style-type: decimal">
+<li><strong>群れ識別</strong></li>
+<li><strong>属性分け</strong>
+<ol style="list-style-type: decimal">
+<li><strong>性・年齢クラス</strong><br>
+オス・メスの区別。アカンボウ・コドモ・ワカモノ・オトナの区別。</li>
+<li><strong>発情の有無</strong><br>
+季節性繁殖する動物では有効なことが多い。</li>
+<li><strong>子持ちの有無</strong><br>
+アカンボウの有無、子のきょうだい構成（性・年齢の組み合わせ）などから判断。</li>
+</ol></li>
+<li><strong>周辺個体情報</strong><br>
+よく近接している個体数のちがいや特徴をつかみやすい個体が近くにいるか等。アドリブサンプリングでとくかく近接個体を記録すると識別しやすくなる。</li>
+</ol>
+</div>
+<div id="似顔絵を描く" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> 似顔絵を描く<a href="識別.html#似顔絵を描く" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+裸眼もしくは双眼鏡で分かる特徴を似顔絵にする。写真よりも敢えて抽象度を上げることでどこに注目すればいいのかが分かりやすくなる利点がある。
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:sketch"></span>
+<img src="figure/%E4%BC%BC%E9%A1%94%E7%B5%B5_%E8%A6%8B%E6%9C%AC.png" alt="似顔絵の見本" width="40%" />
+<p class="caption">
+図3.1: 似顔絵の見本
+</p>
+</div>
+</div>
+<div id="写真を撮る" class="section level3 hasAnchor" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> 写真を撮る<a href="識別.html#写真を撮る" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>スマホはNG！</strong><br>
+望遠機能がない、というのが一番の理由である。20-35倍の光学ズームができるとだいぶ識別するのに使える写真が撮れる。デジタルズームは画像が荒くなるので識別写真には不向き。</p>
+<p><strong>適当な写真は使い物にならない！</strong><br>
+写真は同じようにとってもサルの印象が変わってしまう。自分が識別しているときの顔の印象は、写真を撮ると別人になっていることは往々にして起こる。写真は思ったほど簡単ではない。動画も同じ。</p>
+</div>
 </div>
 </div>
             </section>
@@ -391,8 +401,8 @@ bookdown形式にするにあたっての構造を指定するファイル
           </div>
         </div>
       </div>
-<a href="分析方法.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="実行環境.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="論文.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="観察.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
