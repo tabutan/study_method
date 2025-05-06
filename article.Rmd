@@ -35,13 +35,13 @@ data.frame("Engine" = c("Google Scholar",
                         "Web of Science", 
                         "PubMed", 
                         "CiNii Research"),
-           "Logo" = c("https://seeklogo.com/images/G/google-scholar-logo-EEEC8EE46B-seeklogo.com.png",
+           "Logo" = c("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbloCa9bMZBiKBUythcvHeZz3G_DHYkYNOY_vnqKVg4ShiEGYHlH2JBd9Sk4PAo85Qkmg&usqp=CAU",
                       "https://libraries.emory.edu/sites/default/files/styles/coh_x_large/public/2022-07/Clarivate_Logo.png?itok=eDkE0toU",
                       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/US-NLM-PubMed-Logo.svg/250px-US-NLM-PubMed-Logo.svg.png",
-                      "https://cir.nii.ac.jp/static/images/ci-home-research.png")) %>% 
+                      "https://www.gifu-cn.ac.jp/uploads/library/library-menu-13.png")) %>% 
   gt(caption = "代表的な検索エンジン") %>% 
   ##画像の挿入
-  gt_img_rows(Logo, height = 35) %>% 
+  gt_img_rows(Logo, height = 45) %>% 
   ##列名の変更
   cols_label("Engine" = "論文検索エンジン",
              "Logo" = "ロゴ") %>% 
@@ -215,16 +215,22 @@ library(tidyverse)
 
 data.frame("Engine" = c("Mendeley", 
                         "PaperPile", 
-                        "EndNote"),
+                        "EndNote",
+                        "Zotero"),
            "Logo" = c("https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png",
                       "https://assets.st-note.com/production/uploads/images/94061679/4bba27c25d07a5df23a0321f014eb6fa.png",
-                      "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_79d1e55423c4e496e5de32d1d55e2efb/endnote.png")) %>% 
+                      "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_79d1e55423c4e496e5de32d1d55e2efb/endnote.png",
+                      "https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg"),
+           "備考" = c("割と使われているソフト","ユーザーインターフェースがわかりやすい、一つのGoogleアカウントと紐づけられているので、15GBを超えるとストックに対しても課金されるが、そこまで論文を保存する学生はまずいない。","有料版は高機能だがお高め、無料版のbasicは2GBまで（約1200のPDF）","無料でありながら有能という情報あり")) %>% 
   gt(caption = "代表的な論文管理ソフト") %>% 
   ##画像の挿入
   gt_img_rows(Logo, height = 35) %>% 
+  ## 幅の調整
+  cols_width(Engine ~ px(120)) %>% 
   ##列名の変更
-  cols_label("Engine" = "論文管理ソフト",
-             "Logo" = "ロゴ") %>% 
+  cols_label("Engine" = "文献管理ソフト名",
+             "Logo" = "ロゴ",
+             "備考" = "備考") %>% 
   gt_theme_espn() %>% 
   cols_align(align = "center")
 
