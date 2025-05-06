@@ -19,7 +19,7 @@
 こう思えるだけでだいぶ救われる。<br>
 そして、論文の作法は早く覚えるに越したことはないので、修士の前期のうちに身に着けておくべきことを書き記す。
 
-論文などの学術書の探し方や読み方（複数のモードを使って読む）について、いくつかネットに転がっているが、科学史やメディア論を専門としている岡澤康浩さんがYouTube [@okazawa_yomikata]で解説しているので参照するとよいだろう。
+論文などの学術書の探し方や読み方（複数のモードを使って読む）について、いくつかネットに転がっているが、科学史やメディア論を専門としている岡澤康浩氏がYouTube [@okazawa_yomikata]で解説しているので参照するとよいだろう。
 
 
 ## 論文の探し方
@@ -88,11 +88,31 @@ knitr::include_graphics("figure/JapMonkeys.png")
 自分の研究分野の論文はとにかくアラート。<br>
 霊長類学の分野で言うと、以下の雑誌をアラートすれば英文は最新動向を把握しやすい。とにかく、自分の研究分野が載る雑誌をいち早く把握することは大事。
 
-- *Primates*
-- *International Journal of Primatology*
-- *American Journal of Primatology*
-- *American Journal of Biological Anthropology*
-- *Folia Primatologica*
+- 霊長類学系学術雑誌
+  - *Primates* 
+  - *International Journal of Primatology*
+  - *American Journal of Primatology*
+  - *American Journal of Biological Anthropology*
+  - *Folia Primatologica*
+  
+霊長類学の範疇の超える発見や理論に興味・関心があるのであれば、以下が参考になる。
+
+- 動物行動系学術雑誌 (やや専門)
+  - *Animal Behaviour*
+  - *Behavioural Processes*
+  - *Behavioral Ecology and Sociobiology*
+  - *Ethology*
+  - *Behaviour*
+  - *Behavioral Ecology*
+  - *Journal of Ethology*
+- 動物行動系学術雑誌（一般的）
+  - *Nature*
+  - *Science*
+  - *Proceeding of Royal Society B*
+  - *PNAS (Proceedings of National Academy of Sciences)*
+  - *Current Biology* 
+
+
 
 ##### お気に入り登録
 気になる雑誌を出している出版社をまずお気に入りバーに登録しよう。
