@@ -287,7 +287,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="6.4" data-path="r.html"><a href="r.html#rmarkdownの作成"><i class="fa fa-check"></i><b>6.4</b> Rmarkdownの作成</a></li>
 <li class="chapter" data-level="6.5" data-path="r.html"><a href="r.html#文献整理のテンプレート"><i class="fa fa-check"></i><b>6.5</b> 文献整理のテンプレート</a></li>
-<li class="chapter" data-level="6.6" data-path="r.html"><a href="r.html#github"><i class="fa fa-check"></i><b>6.6</b> GitHub</a></li>
+<li class="chapter" data-level="6.6" data-path="r.html"><a href="r.html#github"><i class="fa fa-check"></i><b>6.6</b> GitHub</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="r.html"><a href="r.html#gitbookの公開"><i class="fa fa-check"></i><b>6.6.1</b> Gitbookの公開</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="実行環境.html"><a href="実行環境.html"><i class="fa fa-check"></i>実行環境</a></li>
 <li class="chapter" data-level="" data-path="引用文献.html"><a href="引用文献.html"><i class="fa fa-check"></i>引用文献</a></li>
@@ -395,7 +398,13 @@ bookdown形式にするにあたっての構造を指定するファイル
 <!-- コメントを付けてコミットし、その後プッシュすることでGitHubに保存される。 -->
 <!-- ### pull -->
 <!-- GitHubに保存したファイルをPCに取り込む。 -->
+<div id="gitbookの公開" class="section level3 hasAnchor" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Gitbookの公開<a href="r.html#gitbookの公開" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>GitHub上でプロジェクトのページにある歯車のSettingsをクリック、左側にあるPagesに進む。</p>
+<p>Build and deploymentのSourceをDeploy from a branchに設定し、Branchをmain, /docs（index.Rmdのoutput_dirで指定したもの）に設定。ページを更新するとBuild and deploymentの上に<strong>Your site is alive at</strong> <a href="https://XXXXXXと表示される" class="uri">https://XXXXXXと表示される</a>。</p>
+<p>その横にあるVisit siteをクリックし、そのURLを取得できる。</p>
 
+</div>
 </div>
 </div>
             </section>

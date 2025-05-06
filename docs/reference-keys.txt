@@ -92,3 +92,4 @@ rrstudiortoolsのインストール
 rmarkdownの作成
 文献整理のテンプレート
 github
+gitbookの公開

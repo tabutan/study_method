@@ -88,6 +88,12 @@ cssファイル
 <!-- ### pull -->
 <!-- GitHubに保存したファイルをPCに取り込む。 -->
 
+### Gitbookの公開
+GitHub上でプロジェクトのページにある歯車のSettingsをクリック、左側にあるPagesに進む。
+
+Build and deploymentのSourceをDeploy from a branchに設定し、Branchをmain, /docs（index.Rmdのoutput_dirで指定したもの）に設定。ページを更新するとBuild and deploymentの上に**Your site is alive at** https://XXXXXXと表示される。
+
+その横にあるVisit siteをクリックし、そのURLを取得できる。
 
 
 
