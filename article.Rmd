@@ -100,6 +100,7 @@ knitr::include_graphics("figure/JapMonkeys.png")
 - 動物行動系学術雑誌 (やや専門)
   - *Animal Behaviour*
   - *Behavioural Processes*
+  - *Animal Cognition*
   - *Behavioral Ecology and Sociobiology*
   - *Ethology*
   - *Behaviour*
@@ -279,6 +280,9 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 ### インパクトファクターの調べ方
 [Journal of Citation Reports](https://jcr.clarivate.com/jcr/home)
 : 投稿先のインパクトファクターを検討したい場合に役立つ。
+
+### 地道な調べ方
+多くのジャーナルを抱えているWiley, Springer, Elsevier, などの大手出版社だと「compare journals 出版社名」と検索すると、出版社内でのジャーナルの比較検討ができる。<br>具体的には、投稿後何日で論文の取り扱いを決める日数、アクセプト率、アクセプトされるまでの日数などが検討できる。 
 
 ## 論文原稿の推敲
 『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』（エイドリアン・ウォールワーク(著),前平 謙二(翻訳),笠川 梢(翻訳)）は論文作成時の注意点について、「読者が読みやすい論文とは？」というシンプルな問いに基づきながら丁寧に解説している。
