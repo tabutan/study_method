@@ -214,20 +214,20 @@ library(gt)
 library(gtExtras)
 library(tidyverse)
 
-data.frame("Engine" = c("Mendeley", 
-                        "PaperPile", 
-                        "EndNote",
-                        "Zotero"),
-           "Logo" = c("https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png",
+data.frame("Engine" = c("EndNote","Mendeley","PaperPile","Zotero"),
+           "Logo" = c("https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_79d1e55423c4e496e5de32d1d55e2efb/endnote.png",
+                      "https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png",
                       "https://assets.st-note.com/production/uploads/images/94061679/4bba27c25d07a5df23a0321f014eb6fa.png",
-                      "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_79d1e55423c4e496e5de32d1d55e2efb/endnote.png",
-                      "https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg"),
-           "備考" = c("割と使われているソフト","ユーザーインターフェースがわかりやすい、一つのGoogleアカウントと紐づけられているので、15GBを超えるとストックに対しても課金されるが、そこまで論文を保存する学生はまずいない。","有料版は高機能だがお高め、無料版のbasicは2GBまで（約1200のPDF）","無料でありながら有能という情報あり")) %>% 
+                                            "https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg"),
+           "料金" = c("無料あり","無料あり","有料","無料あり"),
+           "備考" = c("有料版は高機能だがお高め、無料版のbasicは2GBまで（約1200のPDF論文を添付可能）","Elsevier社が提供しているソフト、2GBまで無料","有料、ユーザーインターフェースがわかりやすい、一つのGoogleアカウントと紐づけられているので、15GBを超えるとストックに対しても課金されため、専用のGoogleアカウントを作っておくとよい。","300MBまで無料で利用できる、論文以外のものも保存する場合は便利そう")) %>% 
   gt(caption = "代表的な論文管理ソフト") %>% 
   ##画像の挿入
   gt_img_rows(Logo, height = 35) %>% 
   ## 幅の調整
   cols_width(Engine ~ px(120)) %>% 
+  cols_width("料金" ~ px(90)) %>% 
+  cols_width("備考" ~ px(380)) %>%
   ##列名の変更
   cols_label("Engine" = "文献管理ソフト名",
              "Logo" = "ロゴ",
