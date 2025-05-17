@@ -90,9 +90,9 @@ knitr::include_graphics("figure/JapMonkeys.png")
 
 - 霊長類学系学術雑誌
   - *Primates* 
-  - *International Journal of Primatology*
-  - *American Journal of Primatology*
-  - *American Journal of Biological Anthropology*
+  - *International Journal of Primatology* (*IJP*)
+  - *American Journal of Primatology* (*AJP*)
+  - *American Journal of Biological Anthropology* (*AJBP*)
   - *Folia Primatologica*
   
 霊長類学の範疇の超える発見や理論に興味・関心があるのであれば、以下が参考になる。
@@ -109,8 +109,8 @@ knitr::include_graphics("figure/JapMonkeys.png")
 - 動物行動系学術雑誌（一般的）
   - *Nature*
   - *Science*
-  - *Proceeding of Royal Society B*
-  - *PNAS (Proceedings of National Academy of Sciences)*
+  - *Proceedings of the Royal Society B*
+  - *Proceedings of National Academy of Sciences* (*PNAS*)
   - *Current Biology* 
 
 
@@ -268,6 +268,7 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 詳細は、[Rの章](#How to R)で説明する。
 
 
+
 ## 論文投稿先の検討
 ### ジャーナルの検討
 
@@ -284,6 +285,20 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 ### 地道な調べ方
 多くのジャーナルを抱えているWiley, Springer, Elsevier, などの大手出版社だと「compare journals 出版社名」と検索すると、出版社内でのジャーナルの比較検討ができる。<br>具体的には、投稿後何日で論文の取り扱いを決める日数、アクセプト率、アクセプトされるまでの日数などが検討できる。 
 
+
+
+## 論文の書きかた
+論文の書きかたを知るためには、指南書を読むより**本丸を突く**ことに尽きる。
+
+投稿先の候補となるジャーナルの"Author Guidlines"をまず検索しよう。<br>
+「author guidlines <ジャーナル名>」とググると必ずヒットする。一般性が上がるにつれてauthor guidelinesは丁寧になる傾向がある。<br>
+
+author guidelinesは日本語で投稿規定に当たるもので、各要素（タイトル、要旨、序論、謝辞など）の書きかた、字数制限、研究倫理ポリシー、ワードの体裁の指定、投稿できる論文の種類、論文全体のページ数制限などが書いてある。<br>別名が多々あり、「Instructions for Authors」、「Information for Authors」、「Instructions for Contributors」といったものが見つかるはず。
+
+霊長類学系のジャーナルで言えば、*International Journal of Primatology*の[Instructions for Authors](https://link.springer.com/journal/10764/submission-guidelines)が一番丁寧で参考になる。霊長類学系のジャーナルに投稿するのであれば、これをもとに*Primates*, *AJP*, *AJBP*の投稿規定に沿うようにすれば、論文が書きやすい。
+
+投稿規定は翻訳機に書けても理解できる日本語になるので、こういう事務仕事は楽して翻訳機に投げていい。
+
 ## 論文原稿の推敲
 『ネイティブが教える 日本人研究者のための論文の書き方・アクセプト術』（エイドリアン・ウォールワーク(著),前平 謙二(翻訳),笠川 梢(翻訳)）は論文作成時の注意点について、「読者が読みやすい論文とは？」というシンプルな問いに基づきながら丁寧に解説している。
 
@@ -291,6 +306,8 @@ Rmarkdownは、溢れ出るアイデアをためてくれる記憶の栓であ�
 [DeepL Write](https://www.deepl.com/write)
 : DeepLには翻訳ツールとWriteの2つのサービスがある。英語から英語に直すときに参考になる。
 
+[ChatGPT](https://chatgpt.com/)
+: 現時点で段違いに英作文能力が高い。打ち込んだ情報は、ChatGPTの知識として取り込まれるので、独創的な発想に関する内容の取扱いには注意。適度に構文を崩さない程度にA,B,Cといった暗号に置換して英訳を頼むのがベター。
 
 ### 剽窃チェックツール
 人のいい文章をまねすることは英文執筆の上達に役立つが、そのまま書いてしまうと剽窃になってしまう。また、AIが発達が目覚ましい昨今、知らずうちに剽窃していたということもありうる。そこで、[iThenticate](https://www.ithenticate.com/)や[Turnitin](https://www.turnitin.jp/)などの剽窃チェックツールを使うことである程度防ぐことができるだろう。
